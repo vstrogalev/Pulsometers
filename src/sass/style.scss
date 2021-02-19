@@ -1,6 +1,12 @@
 @import "base/mixins";
 @import "base/variables";
+@import 'blocks/promo';
 
 * {
     font-family: 'Museo Sans';
 };
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
