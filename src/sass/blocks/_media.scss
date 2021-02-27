@@ -15,7 +15,7 @@
 };
 @media (max-width: 768px) {
     .container {
-        max-width: 90%;
+        max-width: 100%;
     };
     .advantages {
         &__item {
@@ -56,10 +56,12 @@
         }
     };
     .button {
-        width: 100%;
         line-height: 2;
         font-size: 12px;
     };
+    .catalog-item {
+        width: 280px;
+    }
 };
 @media (max-width: 640px) {
     .header {
@@ -111,6 +113,12 @@
         &__header {
             font-size: 35px;
         }
+        &__icons {
+            margin-bottom: 20px;
+        }
+        &__icon {
+            width: 30%;
+        }
     };
     .advantages {
         &__item {
@@ -125,4 +133,28 @@
     .feed-form {
         width: 100%;
     };
+    .catalog {
+        &__tab {
+            width: 30%;
+            font-size: 10px;
+            transform: skewX(0);
+            div {
+                transform: skewX(0);
+            }
+        }
+        &-item {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    .button {
+        &_main {
+            margin: 0 auto;
+            width: 100%;
+        }
+        &_submit {
+            margin: 0 auto;
+            width: 100%; 
+        }
+    }
 };
