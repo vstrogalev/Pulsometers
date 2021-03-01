@@ -11,6 +11,15 @@
     &__item {
         min-height: 222px;
         width: 247px;
+        img {
+            background-color: #fff;
+        }
+        &_animated {
+            animation: heartbeat 2s ease infinite;
+            &:hover {
+                animation-play-state: paused; 
+            }
+        }
     }
     &__title {
         margin-top: 38px;
